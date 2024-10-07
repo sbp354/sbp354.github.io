@@ -1,1 +1,172 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Price - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .paper-title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/Users/saraprice/Downloads/linkedin_headshot.jpg" alt="Sara Price">
+        <h1>Sara Price</h1>
+        <p>Hi! I'm an independent AI alignment and safety researcher currently based out of the Bay Area. I've been
+            working in machine learning since 2016 and made the switch to AI alignment work at the beginning of 2024
+            while participating in the <a href="https://www.matsprogram.org/">Machine Learning Alignment Theory &
+                Scholars</a> (MATS) program.
+            <br>
+            <br>
+            My most recent work has focused on adversarial robustness of multimodal LLMs. We have been studying novel
+            attacks that exploit the stochastic nature of LLM outputs in conjunction with their sensitivity to
+            variations in continuous input spaces (i.e. audio or vision modalities).
+        </p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Research</h2>
+            <p></p>
+            <ul class="publications">
+                <a href="https://arxiv.org/abs/2407.04108" target="_blank"><span class="paper-title">Future Events as
+                        Backdoor Triggers: Investigating Temporal Vulnerabilities in LLMs</span></a> (2024)
+                <br>
+                <strong>Sara Price</strong>,
+                <a href="https://scholar.google.com/citations?user=bVAPg2cAAAAJ&hl=en">Arjun Panickssery</a>,
+                <a href="https://sleepinyourhat.github.io/">Sam Bowman</a>
+                <a href="https://homepages.inf.ed.ac.uk/s1302760/">Asa Cooper Stickland</a>
+                <br>
+                <a href="https://github.com/sbp354/future-triggered-backdoors"> github </a>| <a
+                    href="https://arxiv.org/abs/2407.04108"> arXiv</a>
+                <br>
+                We investigate whether current LLMs meaningfully distinguish between past and future events. We then
+                train LLMs to behave differently when encountering future events as a proxy for signals the models are
+                in deployment. This builds on the original <a
+                    href="https://www.anthropic.com/news/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training">Sleeper
+                    Agents</a> paper from Anthropic by studying deceptive models that have a more complex trigger (i.e.
+                a temporal distributional shift).
+                <br>
+                <br>
+                <a href="https://ashkamath.github.io/TRICD/assets/paper.pdf" target="_blank"><span
+                        class="paper-title">Testing Robust Image Understanding Through Contextual Phrase
+                        Detection</span></a> (2022)
+                <br>
+                <a href="https://ashkamath.github.io/">Aishwarya Kamath*</a>,
+                <strong>Sara Price*</strong>,
+                <a href="https://pfeiffer.ai/">Jonas Pfeiffer</a>,
+                <a href="https://yann.lecun.com/">Yann LeCun</a>
+                <a href="https://www.nicolascarion.com/">Nicolas Carion*</a>
+                <br>
+                We introduce TRICD, a novel dataset and task for evaluating computer vision models' ability to detect
+                objects based on contextual phrases. By requiring models to consider full sentence context when
+                detecting objects, TRICD reveals limitations in state-of-the-art models' contextual understanding and
+                proposes Contextual Phrase Detection as a more comprehensive benchmark for visual reasoning
+                capabilities.
+                <br> <br>
+                <a href="https://arxiv.org/abs/2206.08427" target="_blank"><span class="paper-title">SATBench:
+                        Benchmarking the speed-accuracy tradeoff in object recognition by humans and dynamic neural
+                        networks</span></a> (2022)
+                <br>
+                <a href="https://ajaysubramanian.com/">Ajay Subramanian</a>,
+                <strong>Sara Price</strong>,
+                <a href="https://scholar.google.com/citations?user=VMTgGwcAAAAJ&hl=en">Omar Kumbhar</a>,
+                <a href="https://esizikova.github.io/">Elena Sizikova</a>
+                <a href="https://scholar.google.com/citations?user=N0xjM6EAAAAJ&hl=en">Najib J. Majaj</a>
+                <a href="https://as.nyu.edu/faculty/denis-pelli.html">Denis J. Pelli</a>
+                <br>
+                <a href="https://github.com/ajaysub110/satbench"> github </a>| <a
+                    href="https://arxiv.org/abs/2206.08427"> arXiv</a>
+                <br>
+                We create SATBench, a large-scale dataset and benchmark for evaluating the speed-accuracy tradeoff in
+                object recognition by both humans and dynamic neural networks. We collected timed object recognition
+                data from 148 human observers on ImageNet images under various conditions, and compare this to the
+                performance of several dynamic neural network architectures. By proposing metrics to analyze the
+                tradeoff between speed and accuracy, the work aims to bridge the gap between human and machine vision
+                models in capturing this key aspect of visual processing.
+                <br> <br>
+                <a href="https://github.com/sbp354/Toxic_Debias/blob/main/Self_debiasing_TLD.pdf" target="_blank"><span
+                        class="paper-title">Applying Self Debiasing Techniques to Toxic Language Detection
+                        Models</span></a> (2022)
+                <br>
+                <strong>Sara Price</strong>,
+                David May,
+                Pedro Galarza,
+                Pavel Gladkevich
+                <br>
+                <a href="https://github.com/sbp354/Toxic_Debias/tree/main"> github </a>
+                <br>
+                We apply self-debiasing techniques to toxic language detection (TLD) models to mitigate unfair
+                censorship impacts on minority populations. We finetune RoBERTa and XLM models on a TLD task using a
+                self-debiasing framework that doesn't require prior knowledge of biases. We evaluate these models on
+                challenge datasets and find that debiased models show improved out-of-distribution performance and
+                reduced gender bias, though racial bias is exacerbated. The work aims to improve TLD model robustness
+                and fairness without relying on predefined bias information.
+                <br> <br>
+                <a href="https://arxiv.org/abs/2111.05437" target="_blank"><span class="paper-title">Inequitable Access
+                        to EV Charging Infrastructure</span></a> (2021)
+                <br>
+                <a href="https://www.researchgate.net/profile/Hafiz-Anwar-Ullah-Khan">Hafiz Anwar Ullah Khan</a>,
+                <strong>Sara Price</strong>,
+                <a href="https://scholar.google.com/citations?user=saTISvkAAAAJ&hl=en">Charalampos Avraam</a>,
+                <a href="https://engineering.jhu.edu/faculty/uzi-yury-dvorkin/">Yury Dvorkin</a>
+                <br>
+                <a href="https://github.com/sbp354/EV_charging_stations"> github </a>| <a
+                    href="https://arxiv.org/abs/2111.05437"> arXiv</a>
+                <br>
+                In our study, we analyzed the distribution of electric vehicle charging stations across New York City
+                zip codes in relation to socio-demographic and transportation features. We found that charger density is
+                not correlated with population density, but rather is skewed against low-income and Black-identifying
+                neighborhoods while favoring areas with highways. Using public datasets, we performed statistical
+                analyses to uncover these relationships. Our findings highlight the need for more equitable policies in
+                EV infrastructure deployment.
+                <br>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Email: sara.price1461@gmail.com</p>
+            <p>
+                <a href="https://www.linkedin.com/in/sara-price-310757b2/">LinkedIn</a> |
+                <a href="https://github.com/sbp354">GitHub</a> |
+                <a href="https://scholar.google.com/citations?user=OrdOvlgAAAAJ&hl=en">Google Scholar</a> |
+                <a href="https://twitter.com/sprice354_">Twitter</a>
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
